@@ -1,0 +1,12 @@
+{
+    "name": "nodejs-utility-module",
+    "version": "1.0.0",
+    "description": "A utility module providing sorting and synchronous waiting functionalities.",
+    "main": "src/UtilityClass.js",
+    "scripts": {
+      "test": "node test/main.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "type": "module"
+  }

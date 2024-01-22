@@ -1,17 +1,13 @@
 import Sorter from './Sorter.js';
-import SyncWaiter from './SyncWaiter.js';
+import PromisUtils from './PromisUtils.js';
 
 export default class UtilityClass {
+
+    sorter;
+    promisUtils;
+
     constructor() {
         this.sorter = new Sorter();
-        this.syncWaiter = new SyncWaiter();
-    }
-
-    sortArray(array) {
-        return this.sorter.sort(array);
-    }
-
-    waitForSyncFunction(func, ...args) {
-        return this.syncWaiter.wait(func, ...args);
+        this.promisUtils = new PromisUtils();
     }
 }
